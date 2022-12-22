@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/',  'App\Http\Controllers\TaskController@show');
+
 Route::get('/', function () {
     return view('welcome');
 });

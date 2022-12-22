@@ -5,10 +5,17 @@
         "build": "vite build"
     },
     "devDependencies": {
-        "axios": "^1.1.2",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "axios": "^1.2.1",
         "laravel-vite-plugin": "^0.7.0",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "vite-plugin-vuetify": "^1.0.1",
+        "vue": "^3.2.45",
+        "vue-router": "^4.1.6",
+        "vuetify": "^3.0.5"
     }
 }

@@ -1,10 +1,14 @@
 FROM php:8.0-fpm
+EXPOSE 8081
 
 ENV TZ Asia/Tokyo
 
 RUN apt-get update && \
 	apt-get install -y git unzip libzip-dev libicu-dev libonig-dev && \
 	docker-php-ext-install intl pdo_mysql zip bcmath
+
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
+    apt-get install -y nodejs
 		
 COPY ./docker/app/php.ini /usr/local/etc/php/php.ini
 
