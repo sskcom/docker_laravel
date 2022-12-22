@@ -21,13 +21,13 @@
 
 @git commit -m %star%
 
-@git branch -M develop
+@git branch -M main
 
 @git remote add origin git@github.com:sskcom/QA-site.git
 
 
 
-@git push -u origin develop
+@git push -u origin main
 @set /p star="–{“–‚Éok‚Å‚·‚©"
 
 
